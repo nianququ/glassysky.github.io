@@ -38,7 +38,7 @@ Ball.Game.prototype = {
 		// 拖动人物
 		this._player.inputEnabled = true;
 		this._player.input.enableDrag(false, true);
-		this._player.allowVerticalDrag = false;
+		this._player.input.allowVerticalDrag = false;
 		// 初始化按键
 		cursors = this.input.keyboard.createCursorKeys();
 		// 启动动作
