@@ -7,8 +7,8 @@ Ball.Preloader.prototype = {
 	preload: function(){
 		// 设置背景颜色和预加载图片
 		this.stage.backgroundColor = '#B4D9E7';
-		// this.preloadBar = this.add.sprite((Ball.GAME_WIDTH-311)/2, (Ball.GAME_HEIGHT-27)/2, 'preloaderBar');
-		// this.load.setPreloadSprite(this.preloadBar);
+		this.preloadBar = this.add.sprite((Ball.GAME_WIDTH-311)/2, (Ball.GAME_HEIGHT-27)/2, 'preloaderBar');
+		this.load.setPreloadSprite(this.preloadBar);
 		// load images
 		this.load.image('background', 'img/background.png');
 		this.load.image('floor', 'img/floor.png');
